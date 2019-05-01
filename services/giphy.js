@@ -1,11 +1,11 @@
 const request = require('request')
 
 const GIPHY_RANDOM_ENDPOINT = 'http://api.giphy.com/v1/gifs/random'
-const DEV_API_KEY = 'fxW9Fqwfqb7XVWfINFH5dzGcGhcPPVSI'
+const API_KEY = process.env.GIPHY_API_KEY
 
 const queryGiphy = (endpoint, params) => {
   const { tag = '' } = params
-  const url = `${endpoint}?tag=${encodeURIComponent(tag)}&api_key=${DEV_API_KEY}`
+  const url = `${endpoint}?tag=${encodeURIComponent(tag)}&api_key=${API_KEY}`
   return new Promise((resolve, reject) => {
     request(url, { json: true }, (error, httpResponse, json) => {
       if (error) {
