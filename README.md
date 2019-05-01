@@ -49,19 +49,18 @@ For further installation details check [hub](https://github.com/github/hub).
 
 ### Environement variables
 
+#### Giphy token
+`easy-pr` requires a giphy api token to be able to fetch a giphy url based on the tag input. You can easily generate an api token on the [giphy dev portal](https://developers.giphy.com) and you must add it as an environement variable.
+
+``` sh
+> export GIPHY_API_KEY="MYGIPHYAPIKEY"
+```
+
 #### Github token
 `easy-pr` needs to use an api github token. You need to generate a github token on your github account with the scope `repo` and add it as an environement variable. Of course this token should always remain private and never been shared.
 
 ``` sh
 > export GITHUB_TOKEN="MYGITHUBTOKEN"
-```
-
-#### Jira login credentials
-`easy-pr` needs to fetch data from the Jira api so you need to add your Jira login credentials as environement variables.
-
-``` sh
-> export JIRA_USERNAME="jirausername"
-> export JIRA_PASSWORD="jirapassword"
 ```
 
 ### npm link
