@@ -1,7 +1,7 @@
 # easy-pr
-### A node JS CLI script to ease pull request creation
+### Because every pull request is unique, here is a small node JS CLI script to add some fun to your PR.
 
-The script will create **a nice PR template with a random gif**.
+The script will create **a nice PR template adding a random gif to it**.
 
 ## Template style
 
@@ -21,8 +21,6 @@ Brief description of the purpose of the ticket or of the changes introduced in t
 
 ## Features
 - [x] Add a random gif based on the command tag
-- [ ] Creates automatically the appropriate github tags
-- [ ] Smart reviewer assigning
 
 ## Installation
 ### hub
@@ -59,14 +57,14 @@ For further installation details check [hub](https://github.com/github/hub).
 ```
 
 #### Github token
-`easy-pr` needs to use an api github token. You need to generate a github token on your github account with the scope `repo` and add it as an environement variable. Of course this token should always remain private and never been shared.
+`easy-pr` also requires an api github token. You need to generate a github token on your github account with the scope `repo` and add it as an environement variable. Of course this token should always remain private and never been shared.
 
 ``` sh
 > export GITHUB_TOKEN="MYGITHUBTOKEN"
 ```
 
 ### npm link
-To be able to use it as a local npm package. Clone locally `easy-pr` repository and run `npm link` on it. Done for the setup !
+To be able to use it as a local npm package. Clone locally `easy-pr` repository and run `npm link` on it.
 
 ## Usage
 To open a PR
