@@ -12,8 +12,12 @@ const { GIPHY_RANDOM_ENDPOINT, queryGiphy } = require('./services/giphy.js')
 const TEMPLATE_FILE_NAME = 'pull_request_template.md'
 
 const getPullRequestTemplate = ({ giphyUrl }) => {
-  return `### Description
+  return `PR title
+
+### Description
 [Optional]
+
+Brief description of the purpose of the ticket or of the changes introduced in the PR.
 
 ### TODOS
 - [ ] Example TODO

@@ -5,6 +5,8 @@ The script will create **a nice PR template with a random gif**.
 
 ## Template style
 
+### PR title
+
 #### Description
 [Optional]
 
