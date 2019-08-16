@@ -73,3 +73,7 @@ To open a PR
 ```
 
 It will open a PR with a random gif based on the tag input
+
+## Tags
+cover:~https://media.giphy.com/media/3oEduTtmloCo39hzIA/giphy.gif~
+stack:~Node.js,hub~
